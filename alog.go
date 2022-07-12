@@ -61,6 +61,7 @@ func (al Alog) write(msg string, wg *sync.WaitGroup) {
 			al.errorCh <- err
 		}(err)
 	}
+	// force update
 }
 
 func (al Alog) shutdown() {
